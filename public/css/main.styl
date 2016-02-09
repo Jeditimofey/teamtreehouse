@@ -47,7 +47,6 @@ header button
 	border: none
 	cursor: pointer
 	
-	
 h1, h2, h3, h4
 	margin-bottom: 15px
 
@@ -92,7 +91,7 @@ input[type=text]
 
 .get-start-block
 	background: green-color
-	padding: 95px 15px
+	padding: 95px 0px
 	color: white
 	
 .get-start-block h1
@@ -127,7 +126,10 @@ header>span>img
 	border-top-right-radius: 5px
 	border-top-left-radius: 5px
 	margin-bottom: 35px
-	
+
+@media screen and (max-width: 767px)	
+	header nav
+		display: none	
 
 @media screen and (min-width: 768px)	
  
@@ -145,13 +147,13 @@ header>span>img
 	
 	header nav
 		float: right
-		margin-top: 4px
+		margin-top: 6px
 	
 	header nav a
 		font-size: 14px
 		font-family: Gotham	
 		color: #576366
-		padding-left: 45px
+		padding-left: 30px
 		&:hover
 			color: #313638	
 	
@@ -233,6 +235,8 @@ header>span>img
 	.content .cols.col-12
 		width: 100%
 
-
+@media screen and (min-width: 940px)
 	
+	header nav a
+		padding-left: 45px
 
