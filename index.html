@@ -4,13 +4,25 @@
     <title>TeamTree</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/teamtreehouse/public/css/main.css">
+    <link rel="stylesheet" href="{staticRoot}/css/main.css">
+    <script src="{staticRoot}/scripts/jquery-1.12.0.min.js"></script>
+    <script src="{staticRoot}/scripts/my_scripts.js"></script>
   </head>
   <body>
     <div class="page-content">
       <header>
-        <div class="content"><span>
-            <button></button></span><a href="#" class="brand">	treehouse</a></div>
+        <div class="content">
+          <nav><a href="#">Features</a><a href="#">Organizations</a><a href="#">Stories</a><a href="#">Pricing</a><a href="#">Sign in</a><a href="#">Free trial</a></nav>
+          <div class="mobile-nav">
+            <button class="menu-button"> </button>
+            <div class="mobile-nav-menu">
+              <div class="mobile-nav-menu-head">
+                <button class="button button-normal button-green">Free Trial</button><a href="#">Sign in</a>
+                <button class="close"></button>
+              </div><a href="#">Features</a><a href="#">Organizations</a><a href="#">Stories</a><a href="#">Pricing</a><a href="#">Free trial</a>
+            </div>
+          </div><a href="#" class="brand">	treehouse</a>
+        </div>
       </header>
       <main>
         <div class="get-start-block">
@@ -37,8 +49,45 @@
                         <input type="text" placeholder="Email address **">
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="cols col-12">
+                        <button class="button button-huge button-green">Claim Your Free Trial &gt</button>
+                      </div>
+                    </div>
                   </fieldset>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-heading">
+          <div class="content">
+            <div class="cols col-12">
+              <h1>Some of the Awesome Stuff You'll Learn</h1>
+              <p> <b>The fast, easy, and affordable way to build your skills</b></p>
+            </div>
+            <div class="cols col-3">
+              <div class="item"><img src="/img/website.png">
+                <h5>Build a Website</h5>
+                <p> <b>You'll learn the basics to building a website with an introduction to text editors, basic HTML tags, and advanced HTML skills.</b></p><a href="#">Get Started</a>
+              </div>
+            </div>
+            <div class="cols col-3">
+              <div class="item"><img src="/img/code.png">
+                <h5>Learn to Code</h5>
+                <p> <b>Learn technologies such as Ruby on Rails to help you build the next world changing product.      </b></p><a href="#">Get Started    </a>
+              </div>
+            </div>
+            <div class="cols col-3">
+              <div class="item"><img src="/img/app.png">
+                <h5>Build an App</h5>
+                <p> <b>This is the spot to learn how to build apps. You'll learn the language, tools, and necessary concepts to get your app out the door.</b></p><a href="#">Get Started</a>
+              </div>
+            </div>
+            <div class="cols col-3">
+              <div class="item"><img src="/img/buisiness.png">
+                <h5>Start a Buisiness</h5>
+                <p><b>Find out how to get your business off on the right foot. Topics include corporate structure, marketing, finance, and more!</b></p><a href="#">Get Started</a>
               </div>
             </div>
           </div>
