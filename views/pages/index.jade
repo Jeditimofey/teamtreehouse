@@ -4,14 +4,34 @@ html
 		title TeamTree
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(charset='UTF-8')
-		link(rel='stylesheet', href='#{staticRoot}/css/main.css')
+		link(rel='stylesheet', href='{staticRoot}/css/main.css')
+		script(src='{staticRoot}/scripts/jquery-1.12.0.min.js')
+		script(src='{staticRoot}/scripts/my_scripts.js')
+
 		
 	body
 		.page-content
 			header
 				.content
-					span
-						button
+					nav
+						a(href='#') Features
+						a(href='#') Organizations
+						a(href='#') Stories
+						a(href='#') Pricing
+						a(href='#') Sign in
+						a(href='#') Free trial
+					.mobile-nav
+						button.menu-button 
+						.mobile-nav-menu
+							.mobile-nav-menu-head
+								button.button.button-normal.button-green Free Trial
+								a(href='#') Sign in
+								button.close
+							a(href='#') Features
+							a(href='#') Organizations
+							a(href='#') Stories
+							a(href='#') Pricing
+							a(href='#') Free trial
 					a.brand(href='#')	treehouse
 			main
 				.get-start-block
@@ -32,4 +52,43 @@ html
 										.row
 											.cols.col-12
 												input(type='text', placeholder='Email address **')
+										.row
+											.cols.col-12
+												button.button.button-huge.button-green Claim Your Free Trial &gt
+				.main-heading
+					.content
+						.cols.col-12
+							h1 Some of the Awesome Stuff You'll Learn
+							p  
+								b The fast, easy, and affordable way to build your skills
+						.cols.col-3
+							.item
+								img(src='/img/website.png')
+								h5 Build a Website
+								p 
+									b You'll learn the basics to building a website with an introduction to text editors, basic HTML tags, and advanced HTML skills.
+								a(href='#') Get Started
+						.cols.col-3
+							.item
+								img(src='/img/code.png')
+								h5 Learn to Code
+								p 
+									b Learn technologies such as Ruby on Rails to help you build the next world changing product.      
+								a(href='#') Get Started    
+						.cols.col-3
+							.item
+								img(src='/img/app.png')
+								h5 Build an App
+								p 
+									b This is the spot to learn how to build apps. You'll learn the language, tools, and necessary concepts to get your app out the door.
+								a(href='#') Get Started
+						.cols.col-3
+							.item
+								img(src='/img/buisiness.png')
+								h5 Start a Buisiness
+								p
+									b Find out how to get your business off on the right foot. Topics include corporate structure, marketing, finance, and more!
+								a(href='#') Get Started
+						
 
+						

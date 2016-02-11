@@ -27,7 +27,6 @@ a
 
 .content .cols	
 		float: none
-	
 
 header
 	width: 100%
@@ -45,8 +44,7 @@ header button
 	width: 25px
 	height: 25px
 	border: none
-	cursor: pointer
-	
+	cursor: pointer	
 	
 h1, h2, h3, h4
 	margin-bottom: 15px
@@ -61,6 +59,20 @@ fieldset
 input
 	width: 100%
 	margin-bottom: 10px
+
+button
+	outline: none
+	
+p
+	color: #576366
+	font-size: 16px
+	line-height: 1.6
+	margin-top: 8px
+	margin-bottom: 20px
+	font-family: GothamProLight
+
+img
+	width: 100%
 
 input[type=text]
 	border-radius: 5px
@@ -92,7 +104,7 @@ input[type=text]
 
 .get-start-block
 	background: green-color
-	padding: 95px 15px
+	padding: 95px 0px
 	color: white
 	
 .get-start-block h1
@@ -116,21 +128,145 @@ header>span>img
 	margin-top: 50px
 	background: #fff
 	padding: 30px
-	border-top-right-radius: 5px
-	border-top-left-radius: 5px
+	border-radius: 5px
+	box-shadow: 0px 2px 0px rgba(0,0,0,0.15)
 	
 .form-card p
 	background dark-green-color
+	font-family: Gotham
+	color: #fff
 	padding: 20px
 	margin: -30px
 	text-align: center
 	border-top-right-radius: 5px
 	border-top-left-radius: 5px
 	margin-bottom: 35px
+
+.button 
+	display: inline-block
+	font-family: Gotham
+	color: #fff
+	margin-bottom: 0
+	font-weight: normal
+	text-align: center
+	vertical-align: middle
+	cursor: pointer
+	background-image: none
+	border: 1px solid transparent
+	white-space: nowrap
+	padding: 8px 12px
+	font-size: 14px
+	line-height: 1.42857143
+	border-radius: 4px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+.button-normal
+	padding: 5px 15px
+	font-size: 12px
+	line-height: 1.5
+	border-radius: 5px
+	color: #fff
+
+.button-green
+	background: #5fcf80
+	&:hover
+		background: #3ac162
+
+.button-huge
+	font-size: 16px
+	height: 52px
+	line-height: 48px
+	padding: 0 32px
+	
+.main-heading
+	margin-top: 50px
+.main-heading h1, .main-heading p
+	text-align: center
 	
 
+.main-heading h1
+	font-size: 24px
+	color: #384047
+	margin-bottom: 0px
+	font-family: GothamProMedium
+
+@media screen and (max-width: 767px)
+	header nav
+		display: none
+	
+	header.mobile-nav
+		display: block
+	
+	.get-start-block
+		padding: 95px 15px 
+	
+	.menu-button
+		background: url('/img/hamburger.png')
+		background-size: cover
+		float: right
+		width: 25px
+		height: 25px
+		border: none
+		cursor: pointer	
+	
+	.mobile-nav-menu
+		display: none
+		width: 270px
+		position: absolute
+		top: 0px
+		right: 0px
+		background: #384047
+	
+	.mobile-nav-menu-head
+		height: 52px
+		border-bottom: 1px solid #31383e
+		padding-top: 15px
+		
+	.close
+		background: url('/img/close.png')
+		background-size: cover 
+		position: relative
+		top: -35px
+		left: -40px
+		width: 40px
+		height: 40px
+		border: none
+		cursor: pointer	
+	
+	.mobile-nav-menu-head a 
+		font-size: 14px
+		color: #fff
+		display: block
+		font-family: Gotham	
+		padding: 0px 15px
+		&:hover
+			color:#bbb
+
+	.mobile-nav-menu>a
+		display: block
+		font-family: Gotham	
+		color: #788188
+		font-size: 18px
+		padding: 15px 15px
+		&:hover
+			color:#fff
+	
+	.mobile-nav-menu-head>.button
+		float: right
+		display: block
+		margin-top: -5px
+		margin-right: 10px
+		
+		
+
 @media screen and (min-width: 768px)	
- 
+
+	.mobile-nav
+		display: none
+
 	.content
 		max-width: 1030px
 		padding: 0 15px
@@ -140,13 +276,47 @@ header>span>img
 		height: 80px
 		padding-top: 25px
 	
+	header nav
+		float: right
+		margin-top: 6px
+	
+	header nav a
+		font-size: 14px
+		font-family: Gotham	
+		color: #576366
+		margin-left: 30px
+		&:hover
+			color: #313638
+		&:last-child
+			color: green-color
+			&:hover
+				color: dark-green-color	
+	
 	.brand
 		font-size: 22px
+	
+	.item
+		padding: 5px 35px
 		
+	.item h5
+		margin-top: 40px
+		text-align: left
+		color: #4c5760
+	
+	.item p
+		text-align: left
+	
+	.item a
+		color: #42b4d6
+		margin-top: 20px
+		font-family: GothamProLight
+		font-weight: bold
+		&:hover
+			color: #2dacd1
 
 	.content .cols
 		float: left	
-		margin:  0 0 1em;
+		margin:  0 0 1em
 		padding: 0 5px
 
 	.content .cols.col-1
@@ -218,6 +388,8 @@ header>span>img
 	.content .cols.col-12
 		width: 100%
 
-
+@media screen and (min-width: 940px)
 	
+	header nav a
+		margin-left: 45px
 
