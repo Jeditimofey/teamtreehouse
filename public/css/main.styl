@@ -7,6 +7,10 @@
 	-webkit-box-sizing: border-box 
 	-moz-box-sizing: border-box
 	box-sizing: border-box
+	&:before
+		box-sizing: border-box
+	&:after
+		box-sizing: border-box
 
 html, body
 	font: font-size/line-height font-main
@@ -175,7 +179,8 @@ header>span>img
 	
 .main-heading
 	margin-top: 50px
-.main-heading h1, .main-heading p
+	
+.main-heading>h1, .main-heading>p
 	text-align: center
 	
 
@@ -185,7 +190,110 @@ header>span>img
 	margin-bottom: 0px
 	font-family: GothamProMedium
 
+.item a
+	color: #42b4d6
+	margin-top: 20px
+	font-family: GothamProLight
+	font-weight: bold
+	&:hover
+		color: #2dacd1
+		
+.item h5
+	margin-top: 40px
+	color: #4c5760
+
+.bottom-block
+	background: #f4f7f8
+	padding: 80px 0 90px 0
+
+
+.bottom-block h5
+	color: #384047
+	margin-bottom: 35px
+	
+.bottom-block img
+	width: 70%
+	
+.bottom-block-heading
+	padding-bottom: 45px
+	border-bottom: 1px solid #dee7ea
+	text-align: center
+
+.quote
+	padding-top: 55px
+	
+.quote>p
+	font-size: 17px
+	font-style: italic
+	text-align: left
+
+.attribution
+	color:#97a4ad
+
+
+.attribution .avatar
+	float: left
+	width: 100px
+	height: 100px
+	
+.logo
+	fill: #d3d9dd
+	width: 45px
+	height: 49px
+	display: inline-block
+
+footer
+	margin-top: 70px
+	padding-top: 35px
+	text-align: center
+	position: relative
+	padding-bottom: 40px
+
+footer>p
+	font-size: 12px
+	
+footer
+	&:before
+		width: 30px
+		height: 1px
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -15px
+		content: " "
+		display: block
+		background-color: #eaedef
+
+footer nav
+	font-size: 13px
+	letter-spacing: 0.01px
+
+footer nav a
+	color: #576366
+	&:hover
+		color: #343b3d
+	&:after
+		font-size: 16px
+		content: "•"
+	&:last-child
+		&:after
+			content: " "
+
 @media screen and (max-width: 767px)
+	.content .cols
+		padding: 0px 15px
+		
+	.quote
+		padding-top: 55px
+		width: 80%
+		margin: 0 auto
+	
+	.quote>p
+		font-size: 17px
+		font-style: italic
+		text-align: left
+
+
 	header nav
 		display: none
 	
@@ -251,6 +359,13 @@ header>span>img
 		display: block
 		margin-top: -5px
 		margin-right: 10px
+	
+	.item
+		text-align: center
+		padding: 40px 30% 0 30%
+	
+	.item img
+		width: 90%
 		
 		
 
@@ -291,20 +406,10 @@ header>span>img
 		padding: 5px 35px
 		
 	.item h5
-		margin-top: 40px
 		text-align: left
-		color: #4c5760
 	
 	.item p
 		text-align: left
-	
-	.item a
-		color: #42b4d6
-		margin-top: 20px
-		font-family: GothamProLight
-		font-weight: bold
-		&:hover
-			color: #2dacd1
 
 	.content .cols
 		float: left	
@@ -379,6 +484,9 @@ header>span>img
 		
 	.content .cols.col-12
 		width: 100%
+	
+	.quote
+		padding-right: 15%
 
 @media screen and (min-width: 940px)
 	
