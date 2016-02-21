@@ -37,6 +37,7 @@ header
 	background: white
 	padding: 13px 13px
 	position: fixed
+	border-bottom: 1px solid #e9f0f3
 	top: 0px
 	z-index: 99
 	display: block
@@ -85,6 +86,17 @@ input[type=text]
 		box-shadow: 0 0 2pt 2pt #e8ebed
 		background: #fff
 		transition: 0.3s
+		
+.visible-button
+	-webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, opacity 200ms ease-in-out, border-color 200ms ease-in-out, padding 200ms ease-in-out
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out, opacity 200ms ease-in-out, border-color 200ms ease-in-out, padding 200ms ease-in-out
+	border-radius: 5px
+	border: solid 2px #5fcf80
+	color: #5fcf80
+	padding: 12px 26px 12px 26px
+	&:hover
+		background-color: #5fcf80
+		color: #fff!important
 
 
 .brand
